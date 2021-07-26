@@ -26,4 +26,4 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Build archlinux package
-        uses: mijailr/arch-makepkg-action@v1
+        uses: mijailr/arch-makepkg-action@v1.0.1
