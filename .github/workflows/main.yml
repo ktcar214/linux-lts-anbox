@@ -22,5 +22,20 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Build archlinux package
-        uses: mijailr/arch-makepkg-action@master
+      - uses: actions/checkout@v1
+      
+      - uses: 2m/arch-pkgbuild-builder@v1.16
+        id: build-pkgbuild
+        with:
+          debug: true
+          target: 'pkgbuild'
+          pkgname: 'linux-lts-anbox'
+          
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: linux-lts-anbox*.pkg*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
