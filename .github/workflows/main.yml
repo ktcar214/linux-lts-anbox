@@ -21,9 +21,12 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      
-      - name: Build archlinux package
-        uses: mijailr/arch-makepkg-action@v1.0.1
+steps:
+- name: Build archlinux package
+  uses: countstarlight/arch-makepkg-action@master
+  with:
+    packages: >
+      p7zip
+      wine
+    scripts: "makepkg"
+
