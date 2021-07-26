@@ -21,12 +21,6 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-steps:
-- name: Build archlinux package
-  uses: countstarlight/arch-makepkg-action@master
-  with:
-    packages: >
-      p7zip
-      wine
-    scripts: "makepkg"
-
+    steps:
+      - name: Build archlinux package
+        uses: mijailr/arch-makepkg-action@master
