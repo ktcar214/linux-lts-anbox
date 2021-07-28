@@ -29,5 +29,14 @@ jobs:
       
       - uses: actions/upload-artifact@v2
         with:
-          name: my-artifact
-          path: ./*.zst
+          name: kernel
+          path: ./linux-lts-anbox-[0-9]*.zst
+      - uses: actions/upload-artifact@v2
+        with:
+          name: header
+          path: ./linux-lts-anbox-headers-[0-9]*.zst
+      - uses: actions/upload-artifact@v2
+        with:
+          name: docs
+          path: ./linux-lts-anbox-docs-[0-9]*.zst
+      
