@@ -14,7 +14,7 @@ makedepends=(
 options=('!strip')
 _srcname=linux-$pkgver
 source=(
-  https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.xz
+  https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
   config         # the main kernel config file
   0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
 )
@@ -24,6 +24,7 @@ validpgpkeys=(
 )
 # https://www.kernel.org/pub/linux/kernel/v5.x/sha256sums.asc
 sha256sums=('f0058d902933986dbaf03b2a0304d2babe5fe1c8e3f41f156ffd3c3f210106dc'
+            'SKIP'
             'fb415226877464fbdd4138dc38b41bfde2f5de5e5f6c8f9b8b22d861a3467ac5'
             '96a72e1652314215da7140956c3abcf495cafd00811eda3cf4ce03ec5f791f1e')
 
