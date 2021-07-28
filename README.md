@@ -1,6 +1,5 @@
 # linux-lts-anbox
-arch linux PKGBUILD and automatic build using Guthub Action.
-WARNING: PKGBUILD does not include gpg verification; never use PKGBUILD directly without modification.
+arch linux PKGBUILD and automatic build using Github Action.
 Seek Github action artifacts for prebuilt output; they are currently untested.
 
 ## about linux-lts-anbox
