@@ -23,7 +23,7 @@ validpgpkeys=(
   '647F28654894E3BD457199BE38DBBDC86092693E'  # Greg Kroah-Hartman
 )
 # https://www.kernel.org/pub/linux/kernel/v5.x/sha256sums.asc
-sha256sums=('609678e5ba8e08aed59c1e8064fe3ab7a916d4f8bbe8ad3a624e579dfec101d1'
+sha256sums=('7581113dad67a095bc5cc32b457e1a9283f91579e248f3b547a7302157fe8889'
             'SKIP'
             'fb415226877464fbdd4138dc38b41bfde2f5de5e5f6c8f9b8b22d861a3467ac5'
             '96a72e1652314215da7140956c3abcf495cafd00811eda3cf4ce03ec5f791f1e')
