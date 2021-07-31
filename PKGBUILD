@@ -1,7 +1,7 @@
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgbase=linux-lts-anbox
-pkgver=5.10.54
+pkgver=5.10.55
 pkgrel=1
 pkgdesc='LTS Linux'
 url="https://www.kernel.org/"
